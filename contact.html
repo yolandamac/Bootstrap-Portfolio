@@ -13,40 +13,49 @@
 
 <body>
 
-  <header id="masthead">
-    <a href="index.html" id="logo">Yolanda McCarthy</a>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html"">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class ="navbar-brand" href="index.html" id="logo">Yolanda McCarthy</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
       </div>
-  </header>
+    </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+<div class="row">
+  <div class="container-fluid">
+    <div class="col-md-8">
+    <div class="page-header">
+    <h1>Contact</h1>
+  </div>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
 
-    </section>
+  <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+    </div>
+
+
+    <div class="form-group">
+      <label for="pwd">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Message</label>
+      <textarea id="message" name="message" required="required"></textarea>
+    </div>
+
+    <input type="submit">
+
+  </form>
+
+</div>
 
         <div class="col-md-4">
         <div class="panel panel-default">
@@ -58,19 +67,17 @@
               <a href="https://www.linkedin.com/in/yolandamccarthysharepoint"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn width="45" height="45" " /></a>
               <a href="https://stackoverflow.com/users/5582373/yomac"><img src="assets/images/stackoverflow.jpeg" class="social" alt="Stack Overflow" width="45" height="45" /></a>
           </div>
-        </div>  
+        </div> 
+      </div>
     </div>
   </div>
-</div>
+
+  <footer>
+    <p id="footer-tag">Copyright &copy; 2017 Yolanda McCarthy</p>
+  </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <footer>
-    <div class="container-ft">
-      Copyright &copy; 2017 Yolanda McCarthy
-    </div>
-  </footer>
 
 </body>
 </html>

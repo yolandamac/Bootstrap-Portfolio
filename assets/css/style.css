@@ -14,26 +14,22 @@ p {
   margin-bottom: 20px;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 h1,
 h2,
 h3 {
-  margin-top: 100px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: #4aaaa5;
 }
+
 .row {
   background-color: #fff;
 }
 
 .page-header {
-  margin-top: 200px;
   padding-bottom: 9px;
-  margin: 20px 0 20px;
+  padding-top: 50px;
+  margin-top: 125px;
   background-color: #fff;
 }
 
@@ -41,8 +37,12 @@ h3 {
   margin-top: 100px;
 }
 
+.col-xs-12 {
+  float: none;
+}
+
 h1 {
-  margin-top: 100px;
+  margin-top: 100pxpx;
   padding-bottom: 10px;
   font-size: 30px;
   border-bottom: 3px solid #ddd;
@@ -51,29 +51,9 @@ h1 {
   color: #4aaaa5;
 }
 
-.row {
-  margin-top: 25px;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
-.h1 {
-  margin-top: 100px;
-  padding-bottom: 10px;
-  font-size: 30px;
-  border-bottom: 3px solid #ddd;
-}
-
-h2,
-h3 {
-  font-size: 22px;
-}
-
 /* header */
 
-#masthead {
+.navbar-inverse {
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -82,59 +62,31 @@ h3 {
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
+  border-color: #ccc;
 }
 
 #logo {
   float: left;
-  width: 325px;
-  height: 90px;
+  width: 225px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 90px;
   color: #fff;
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
 }
 
-.navbar-default {
-  margin-left: 600px;
-  background-color: #fff;
-  border-color: #fff;
+.navbar-right {
+  margin-right: 15px;
 }
 
-.container {
-  margin-left: 25px;
-}
-
-nav {
-  float: right;
-  margin-top: 25px;
-}
-
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
-}
-
-li a {
-  color: #999;
-
-
-nav a:first-child {
-  border-left: 0 none;
+.panel-default {
+  width: 100%;
 }
 
 /* footer */
-
-.footer {
-  margin-top: 100px;
+#footer-tag {
   text-align: center;
   padding: 30px 0;
   font-size: 12px;
@@ -145,49 +97,85 @@ nav a:first-child {
   border-top: 8px solid #4aaaa5;
 }
 
-/* main */
-
-#main-container {
-  padding-top: 130px;
-}
-
-.main-section {
-  float: left;
-  width: 100%;
-  max-width: 650px;
-  margin: 0 0 40px;
-  background: #fff;
-  border: 1px solid #ddd;
-}
-
 /* portfolio page */
 
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.work:nth-child(even) {
-  margin-right: 40px;
+.hangman {
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    position: relative;
+    float: left;
+    top: -50px;
+    width: 120%;
+    right: 15px;
+    clear:both;
 }
 
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
+.rpg {
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    position: relative;
+    float: left;
+    top: -50px;
+    width: 120%;
+    right: 15px;
+    clear:both;
 }
 
-.work h3 {
+.trivia {
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    position: relative;
+    float: left;
+    top: -70px;
+    width: 120%;
+    right: 15px;
+    clear:both;
+}
+.rock {
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    position: relative;
+    float: left;
+    top: -75px;
+    width: 120%;
+    right: 15px;
+    clear:both;
+}
+.rutgers {
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    position: relative;
+    float: left;
+    top: -95px;
+    width: 120%;
+    right: 15px;
+    clear:both;
+}
+
+
+
+.thumbnail h3 {
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  width: 220px;
   padding: 15px;
   margin-bottom: 0;
   font-weight: 300;
-  line-height: 30px;
   color: #fff;
   text-align: center;
   background: #4aaaa5;
@@ -204,12 +192,16 @@ nav a:first-child {
 
 /* contact page */
 
-#contact-form ul {
-  margin-bottom: 20px;
-}
 
-#contact-form li {
-  margin-bottom: 10px;
+.form-group {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 label,
@@ -240,10 +232,5 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
-}
-
-#footer-tag {
-  color: red;
-  background-color: green;
-  font-size: 150px;
+  margin-bottom: 25px;
 }
